@@ -1,9 +1,12 @@
 import React from 'react'
-import ME from '../../assets/dp.jpg'
+import B from '../../assets/b.jpg'
+import C from '../../assets/c.jpg'
+import D from '../../assets/d.jpg'
 
 import './testimonial.css'
 
-import { useRef, useState } from 'react';
+// import {  useState } from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -19,19 +22,19 @@ import { Autoplay, Pagination} from 'swiper/modules';
 const data = [
   {
     id : 1,
-    image: ME,
-    name:'Sir Wanksalot',
+    image: B,
+    name:'Chika Okere',
     review: '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima, illo, saepe officiis voluptates mollitia dolorum quas, delectus architecto quidem quasi molestias veritatis at ullam. Magnam odio mollitia consequuntur numquam!'
   },
   {
     id : 2,
-    image: ME,
-    name:'Jerry',
+    image: C,
+    name:'James Abiodun',
     review: '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima, illo, saepe officiis voluptates mollitia dolorum quas, delectus architecto quidem quasi molestias veritatis at ullam. Magnam odio mollitia consequuntur numquam!'
   },
   {
     id : 3,
-    image: ME,
+    image: D,
     name:'Prince',
     review: '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima, illo, saepe officiis voluptates mollitia dolorum quas, delectus architecto quidem quasi molestias veritatis at ullam. Magnam odio mollitia consequuntur numquam!'
   }
@@ -60,11 +63,11 @@ const Testimonial = () => {
         
       >
        {
-        data.map(({avatar, name, review}, index) =>{
+        data.map(({avatar, name, image, review}, index) =>{
           return(
             <SwiperSlide key={index} className="testimonial">
             <div className="client__avatar">
-              <img src={ME} alt="" />
+              <img src={image} alt="" />
             </div>
               <h5 className="client__name">{name}</h5>
               <p className="client__review">

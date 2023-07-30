@@ -26,6 +26,7 @@ body {
     background-image: url('./assets/bg-texture.png');
     color: var(--color-white);
     line-height: 1.7;
+    overflow-x: hidden;
 }
 
 * {
@@ -59,9 +60,20 @@ section>h5 {
     color: var(--color-light);
 }
 
+section>h1 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+    font-size: 3rem;
+
+}
 section>h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
+    font-size: 2rem;
+}
+section>h5 {
+    /* margin-bottom: 3rem; */
+    font-size: 1.5rem;
 }
 
 .text-light {

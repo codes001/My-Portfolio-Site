@@ -21,8 +21,8 @@ const data = [
     id : 2,
     image: NESREA,
     title:'A clone of Nigerian based environmental agency',
-    github: 'https://nesrea.netlify.app/',
-    demo: 'https://github.com/codes001/nesrea.git'
+    github: 'https://github.com/codes001/nesrea.git',
+    demo: 'https://nesrea.netlify.app/'
   },
   {
     id : 3,

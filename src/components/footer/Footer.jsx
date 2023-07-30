@@ -12,8 +12,8 @@ const Footer = () => {
 
 
     <div className='footer-socials' data-aos='fade-up'>
-      <a href='https://twitter.com/' target='_blank' rel="noreferrer"><IoLogoTwitter /></a>
-      <a href='https://www.linkedin.com/in/' target='_blank' rel="noreferrer"><FiLinkedin /></a>
+      <a href='https://twitter.com/_effiong_prince' target='_blank' rel="noreferrer"><IoLogoTwitter /></a>
+      <a href='https://www.linkedin.com/in/prince-effiong' target='_blank' rel="noreferrer"><FiLinkedin /></a>
       <a href='https://github.com/codes001' target='_blank' rel="noreferrer"><BsGithub /></a>
     </div>
 

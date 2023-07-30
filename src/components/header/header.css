@@ -83,3 +83,23 @@ overflow:hidden;
         display:none;
     }
 }
+
+/* =========================MEDIA QUERIES  FOR SMALLER PHONES =============================  */
+@media (max-width:400px) {
+    .me{
+        display:none;
+           }
+
+    header{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cta{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
