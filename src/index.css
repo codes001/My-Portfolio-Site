@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: 'Bree Serif', serif;
+    font-family: 'Bree Serif', sans-serif;
     background-color: var(--color-bg);
     background-image: url('./assets/bg-texture.png');
     color: var(--color-white);
@@ -39,6 +39,9 @@ body {
     letter-spacing: 1px;
 }
 
+title{
+    color:red;
+}
 /* ======================= GENERAL STYLES ============================ */
 .container {
     width: var(--container-width-lg);

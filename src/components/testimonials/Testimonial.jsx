@@ -1,23 +1,10 @@
 import React from 'react'
+import Slider from "react-slick";
 import B from '../../assets/b.jpg'
 import C from '../../assets/c.jpg'
 import D from '../../assets/d.jpg'
 
 import './testimonial.css'
-
-// import {  useState } from 'react';
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-
-// import required modules
-import { Autoplay, Pagination} from 'swiper/modules';
-
 
 const data = [
   {
@@ -43,44 +30,37 @@ const data = [
 
 
 const Testimonial = () => {
-  return (
-    <section id="testimonials">
-      <h5>Client Reviews</h5>
-      <h1>Testimonials</h1>
-
-      <Swiper className="container testimonials__container mySwiper"
-      spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 4500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination]}
-        
-      >
-       {
-        data.map(({avatar, name, image, review}, index) =>{
-          return(
-            <SwiperSlide key={index} className="testimonial">
-            <div className="client__avatar">
-              <img src={image} alt="" />
-            </div>
-              <h5 className="client__name">{name}</h5>
-              <p className="client__review">
-                {review}
-              </p>
-          </SwiperSlide>
-          )
-        })
-       }
-     
-      </Swiper>
-    </section>
-  )
+  const SimpleSlider =() => {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 1
+    };
+    return (
+      <Slider {...settings}>
+        <div>
+          <h3>1</h3>
+        </div>
+        <div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <h3>5</h3>
+        </div>
+        <div>
+          <h3>6</h3>
+        </div>
+      </Slider>
+    );
+  }
 }
 
 export default Testimonial

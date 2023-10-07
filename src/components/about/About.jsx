@@ -1,6 +1,7 @@
 import React from 'react'
-import ME from '../../assets/dp.jpg'
-import {Zoom} from 'react-reveal/Zoom'
+import ME2 from '../../assets/Prince.jpg'
+
+// import Zoom from 'react-reveal/Zoom'
 import { FaAward } from 'react-icons/fa'
 import { PiUsersThree } from 'react-icons/pi'
 import { BiSolidFolderOpen } from 'react-icons/bi'
@@ -14,7 +15,7 @@ const About = () => {
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
-          <img src={ME} alt="ME" />
+          <img src={ME2} alt="ME" />
         </div>
         <div className="about__content">
           <div className="about__cards">
@@ -35,12 +36,12 @@ const About = () => {
             </article>
 
           </div>
-          <Zoom>
+          <div>
             <p className='animate__animated animate__zoomInRight' data-aos="fade-up-right">
-              Hey! My name is Prince and I'm a web developer, I build responsive web pages and applications with HTML5, CSS3 and Javascript. As a field that is constantly evolving to incorporate new technology, frontend development can reward those who like to learn new things and take up new challenges.
+              Hey! My name is Prince and I'm a web developer, I build responsive web pages and applications with HTML5, CSS3 and Javascript and ReactJS. As a field that is constantly evolving to incorporate new technology, frontend development can reward those who like to learn new things and take up new challenges.
               I'm creative, I'm available for new challenges that can help in problem solving. Also available as a freelancer developer.</p>
             <a href="#contact" className='btn btn-primary'>Let's Talk</a>
-          </Zoom>
+          </div>
         </div>
       </div>
     </section>

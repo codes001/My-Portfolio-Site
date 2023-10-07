@@ -6,6 +6,7 @@ import API from '../../assets/portfolio/api.jpg'
 import NESREA from '../../assets/portfolio/nesrea.jpg'
 import PRYBERTO from '../../assets/portfolio/pryberto.jpg'
 import WHATSAPP from '../../assets/portfolio/whatsapp.jpg'
+import JERRY from '../../assets/portfolio/jerry.png'
 
 import './portfolio.css'
 
@@ -37,6 +38,13 @@ const data = [
     title:'Rebuilding Whatsapp User Interface with just HTML and CSS',
     github: 'https://github.com/codes001/Whatsapp-clone.git',
     demo: 'https://whatsapp-web-clone-2.netlify.app/'
+  },
+  {
+    id : 5,
+    image: JERRY,
+    title:'Personal portfolio site for a Data Scientist/ Algoritmetic Trader',
+    github: 'https://github.com/codes001/jerry-inyang.git',
+    demo: 'https://jerry-inyang.netlify.app/'
   }
 ]
 

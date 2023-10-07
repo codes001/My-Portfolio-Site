@@ -53,9 +53,9 @@ const Contact = () => {
 
         {/* Beginnning of contact form */}
         <form ref={form} onSubmit={sendEmail} data-aos='fade-up'>
-          <input type='text' placeholder='Your Full Name' name='name' required/>
-          <input type='email' placeholder='Your Email' name='email'/>
-          <textarea name='message' rows='7' placeholder='Your Message' required></textarea>
+          <input type='text' placeholder='Enter your Full Name' name='name' required/>
+          <input type='email' placeholder='Enter your email' name='email'/>
+          <textarea name='message' rows='7' placeholder='Enter your message' required></textarea>
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
       </div>
