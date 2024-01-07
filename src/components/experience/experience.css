@@ -33,18 +33,21 @@
 .experience__details{
     display:flex;    
     flex-direction: column;
-
+    justify-content: center;
     gap:1rem;
 }
 .experience__content div{
     display:flex;
+    height: fit-content;
+    align-items: center;
     
 }
 
 .experience__details-icon{
     margin-top: 6px;
     margin-right: 1rem;
-    color: var(--color-primary);
+    /* color: var(--color-primary); */
+    font-size:1.5rem;
 }
 
 

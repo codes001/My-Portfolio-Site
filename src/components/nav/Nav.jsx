@@ -1,5 +1,5 @@
 import React from 'react'
-import { BiHomeCircle } from 'react-icons/bi'
+import { BiHomeCircle, BiMessageCheck } from 'react-icons/bi'
 import { AiOutlineUser } from 'react-icons/ai'
 import { BiBook } from 'react-icons/bi'
 import {BiSolidFolderOpen} from 'react-icons/bi'
@@ -17,6 +17,8 @@ const Nav = () => {
       <a href="#work" title="Projects" onClick={()=> setActiveNav('#work')} className={activeNav === '#work' ? 'active' : ''}><BiSolidFolderOpen/></a>
       <a href="#contact" title='Contact' onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><FaFacebookMessenger/></a>
     </nav >
+
+   
   )
 }
 
