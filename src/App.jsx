@@ -8,12 +8,12 @@ import Contact from './components/contact/contact'
 import Footer from './components/footer/Footer'
 import Loader from './utils/Loader'
 const App = () => {
- 
 
- 
+
+
   return (
     <>
-    <Loader />
+      <Loader />
       <Header />
       <Nav />
       <About />
