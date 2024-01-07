@@ -28,7 +28,7 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card"
-             data-aos="fade-right"
+             data-aos="fade-up"
              data-aos-delay="200"
              data-aos-duration="2000"
             >
@@ -46,7 +46,7 @@ const About = () => {
               <small>4+ </small>
             </article>
             <article className="about__card"
-             data-aos="fade-left"
+             data-aos="fade-down"
              data-aos-delay="50"
              data-aos-duration="2000"
             >
@@ -58,7 +58,7 @@ const About = () => {
           </div>
 
           <div
-           data-aos="fade-left"
+           data-aos="fade-up"
            data-aos-delay="50"
            data-aos-duration="3000"
           >
@@ -78,9 +78,7 @@ const About = () => {
 
             </p>
             <a href="#contact" className='btn btn-primary' 
-             data-aos="bounce-in-right"
-             data-aos-delay="50"
-             data-aos-duration="2000"
+           
             >Let's Talk</a>
           </div>
         </div>

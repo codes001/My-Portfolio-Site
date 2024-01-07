@@ -79,7 +79,7 @@ const Contact = () => {
         <div className='contact-options'>
           <article className='contact-option'
 
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay="50"
             data-aos-duration="3000"
 
@@ -90,7 +90,7 @@ const Contact = () => {
           </article>
 
           <article className='contact-option'
-            data-aos="fade-left"
+            data-aos="fade-down"
             data-aos-delay="150"
             data-aos-duration="3000"
           >
@@ -101,7 +101,7 @@ const Contact = () => {
           </article>
 
           <article className='contact-option'
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-delay="250"
             data-aos-duration="3000"
           >
@@ -113,7 +113,7 @@ const Contact = () => {
         {/* End f contact option */}
 
         {/* Beginnning of contact form */}
-        <form ref={form} onSubmit={formik.handleSubmit} data-aos="fade-left"
+        <form ref={form} onSubmit={formik.handleSubmit} data-aos="fade-up"
           data-aos-delay="50"
           data-aos-duration="3000">
           <input onChange={formik.handleChange}

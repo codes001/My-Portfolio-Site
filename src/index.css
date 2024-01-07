@@ -26,7 +26,7 @@ body {
     background-image: url('./assets/bg-texture.png');
     color: var(--color-white);
     line-height: 1.7;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 * {
