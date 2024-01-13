@@ -26,12 +26,12 @@ const Contact = () => {
   };
 
   const handleNameChange = (e) => {
-    setName('');
+    setName(e.target.value);
     setNameError('');
   };
 
   const handleEmailChange = (e) => {
-    setEmail('');
+    // setEmail(e.target.value);
     setEmailError('');
   };
 
@@ -45,7 +45,7 @@ const Contact = () => {
   useEffect (()=> emailjs.init('7jl6uocNFTV__p0Tp'), [])
 
   //Handle form submission
-  const handleSubmit =(e) =>{
+  const handleSubmit = async (e) =>{
     
     // Prevent page refresh on submit
     e.preventDefault();
@@ -82,6 +82,13 @@ const Contact = () => {
      
     })
 
+    try{
+      await new Promise(()=>setTimeout(resolve, 2000))
+      setName('')
+      setEmail('')
+    } catch(error){
+      console.error('Something went wrong:', error)
+    }
     // If all validations pass, you can proceed with form submission or other actions
     console.log('Form submitted successfully:', { name, email });
   };
