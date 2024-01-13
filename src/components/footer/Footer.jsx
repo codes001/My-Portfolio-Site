@@ -6,6 +6,8 @@ import {BiLogoUpwork, BiMailSend} from 'react-icons/bi'
 import  './footer.css'
 
 const Footer = () => {
+
+  const date = new Date().getFullYear()
   return (
     
     <footer id='footer'>
@@ -22,7 +24,7 @@ const Footer = () => {
     </div>
 
     <div className='footer-copyright'>
-      <small>&copy; Pryberto Code. All rights reserved</small>
+      <small>&copy; Pryberto Code.{date} All rights reserved</small>
     </div>
   </footer>
   )
