@@ -26,12 +26,12 @@ const Contact = () => {
   };
 
   const handleNameChange = (e) => {
-    setName(e.target.value);
+    // setName(e.target.value);
     setNameError('');
   };
 
   const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+    // setEmail(e.target.value);
     setEmailError('');
   };
 
