@@ -14,7 +14,7 @@
 .experience__container>div:hover{
     background-color: transparent;
    
-    border-color: var(--color-bg-variant);
+    border-color: var(--color-light);
     
 }
 .experience__container>div h3{

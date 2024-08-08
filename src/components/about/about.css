@@ -46,7 +46,7 @@ gap:5%;
 }
 .about__card:hover{
     background: transparent;
-    border-color: var(--color-bg-variant)
+    border-color: var(--color-light)
 }
 
 .about__icon{

@@ -20,6 +20,10 @@ const Contact = () => {
   const [emailError, setEmailError] = useState('');
  
 
+  const [text, setText] = useState('');
+  const [textError, setTextError] = useState('');
+
+
   const validateEmail = (inputEmail) => {
    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -36,6 +40,10 @@ const Contact = () => {
     setEmailError('');
   };
 
+  const handleTextChange = (e) => {
+    setText(e.target.value);
+    setTextError('')
+  };
   
 
 //EMAILJS
@@ -53,19 +61,25 @@ const Contact = () => {
    
     // Validate name
     if (name.trim() === '') {
-      setNameError('*Name is required');
+      // setNameError('*Name is required');
       toast.error('Name is required')
+      return;
+    }
+
+    // Validate textarea
+    if(text.trim() === ''){
+      toast.error('Please drop a message')
       return;
     }
 
     // Validate email
     if (email.trim() === '') {
-      setEmailError('*Email is required');
+      // setEmailError('*Email is required');
       toast.error('Email is required')
       return;
     } else if (!validateEmail(email)) {
-      setEmailError('Invalid email address');
-      toast.error('nvalid email address')
+      // setEmailError('Invalid email address');
+      toast.error('Invalid email address')
       return;
     }
 
@@ -87,14 +101,21 @@ const Contact = () => {
     })
 
     try{
-      // await new Promise(()=>setTimeout(resolve, 2000))
-      setName('')
-      setEmail('')
+
+      setTimeout(() => {
+        
+        setName('')
+        setEmail('')
+        setText(
+          ''
+        )
+      }, 2000);
     } catch(error){
+      toast.error('Err...Something went wrong')
       console.error('Something went wrong:', error)
     }
     // If all validations pass, you can proceed with form submission or other actions
-    console.log('Form submitted successfully:', { name, email });
+    console.log('Form submitted successfully:', { name, email , text});
   };
 
 
@@ -158,12 +179,13 @@ const Contact = () => {
           <input 
             
             type='text' name='user_name' id='user_name' placeholder='Enter your Full Name' value={name} onChange={handleNameChange}/>
-            <span style={{color:'red'}}>{nameError}</span>
           <input         
             type='email' name='user_email' id='user_email' placeholder='Enter your email' value={email} onChange={handleEmailChange} />
-            <span style ={{color:'red'}}>{emailError}</span>
+           
 
           <textarea
+          value={text}
+          onChange={handleTextChange}
           
             name='user_message' rows='7' id='user_message' placeholder='Enter your message' ></textarea>
 

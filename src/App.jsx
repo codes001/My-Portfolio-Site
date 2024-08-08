@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <>
-     <ToastContainer />
+     <ToastContainer theme='colored' />
       <Loader />
       <Header />
       <Nav />

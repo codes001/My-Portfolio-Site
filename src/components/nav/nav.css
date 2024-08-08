@@ -1,5 +1,5 @@
 nav{
-    background-color: #08519662;
+    background-color: #082b4fd3;
     width: max-content;
     display:block;
     padding: 1rem 2rem;
@@ -25,7 +25,7 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #1173b9;
+    background-color: #043c64;
 }
 
 nav a.active{
