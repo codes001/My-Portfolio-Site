@@ -34,7 +34,7 @@ const About = () => {
             >
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>2+ Years</small>
+              <small>3+ Years</small>
             </article>
             <article className="about__card"
              data-aos="fade-down"
@@ -43,7 +43,7 @@ const About = () => {
             >
               <PiUsersThree className='about__icon' />
               <h5>Clients</h5>
-              <small>4+ </small>
+              <small>8+ </small>
             </article>
             <article className="about__card"
              data-aos="fade-down"
@@ -74,7 +74,11 @@ const About = () => {
               presence, I'm here to turn your ideas into reality. 
               Feel free to explore my portfolio to see my projects, and don't hesitate to
               reach out. <br />
+
+              <strong>
+
               LET'S CODE THE FUTURE TOGETHER!
+              </strong>
 
             </p>
             <a href="#contact" className='btn btn-primary' 

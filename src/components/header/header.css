@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
 header{
     height:100vh;
 padding-top:7rem;
@@ -10,6 +13,10 @@ overflow:hidden;
     position: relative;
 }
 
+header .header__container h1{
+    
+    font-family: ' Grey Qo', sans-serif !important;
+}
 
 /*====================CTA======================= */
 
@@ -47,7 +54,7 @@ overflow:hidden;
 .me{
     background: linear-gradient(var(--color-primary), transparent);
     width:22rem;
-    height:48rem;
+    height:20rem;
     position:absolute;
     left: 50%;
     transform:translateX(-50%);

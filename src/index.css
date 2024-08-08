@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 :root {
-    --color-bg: #011e3a;
-    --color-bg-variant: #074b8b;
-    --color-primary: #4db5ff;
+    --color-bg: #013a24;
+    --color-bg-variant: #076c2c;
+    --color-primary: #4dffe1;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.7);
     --transition: all 400ms ease;
@@ -21,8 +20,7 @@ html {
 }
 
 body {
-    font-family: 'Bree Serif', sans-serif;
-    background-color: var(--color-bg);
+    font-family: "Radio Canada Big", sans-serif;    background-color: var(--color-bg);
     background-image: url('./assets/bg-texture.png');
     color: var(--color-white);
     line-height: 1.7;

@@ -7,12 +7,15 @@ import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/contact'
 import Footer from './components/footer/Footer'
 import Loader from './utils/Loader'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const App = () => {
 
 
 
   return (
     <>
+     <ToastContainer />
       <Loader />
       <Header />
       <Nav />

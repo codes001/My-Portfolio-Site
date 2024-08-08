@@ -4,6 +4,8 @@ import './experience.css'
 import { FaFigma, FaHtml5, FaNode, FaPython, FaReact } from 'react-icons/fa'
 import { BiLogoCss3, BiLogoJavascript, BiLogoMongodb, BiLogoTailwindCss } from 'react-icons/bi'
 import { TbBrandNextjs } from 'react-icons/tb'
+import { FaVuejs } from 'react-icons/fa'
+import { BsWordpress } from 'react-icons/bs'
 // AOS
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -68,6 +70,14 @@ const Experience = () => {
                 
               </article>
             </div>
+
+            <div>
+              <FaVuejs className='experience__details-icon' />
+              <article className="experience__details">
+                <h4>Vue JS</h4>
+                
+              </article>
+            </div>
           </div>
         </div>
 
@@ -96,6 +106,14 @@ const Experience = () => {
             <FaFigma className='experience__details-icon' />
             <article className="experience__details">
               <h4>Figma</h4>
+              
+            </article>
+          </div>
+
+          <div>
+            <BsWordpress className='experience__details-icon' />
+            <article className="experience__details">
+              <h4>Wordpress</h4>
               
             </article>
           </div>

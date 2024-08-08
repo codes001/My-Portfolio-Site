@@ -6,6 +6,7 @@ import 'react-notifications/lib/notifications.css'
 import {NotificationContainer, NotificationManager} from 'react-notifications';
 import emailjs from "@emailjs/browser";
 import AOS from 'aos'
+import { toast } from 'react-toastify'
 import 'aos/dist/aos.css'
 import './contact.css'
 
@@ -31,7 +32,7 @@ const Contact = () => {
   };
 
   const handleEmailChange = (e) => {
-    // setEmail(e.target.value);
+    setEmail(e.target.value);
     setEmailError('');
   };
 
@@ -53,22 +54,25 @@ const Contact = () => {
     // Validate name
     if (name.trim() === '') {
       setNameError('*Name is required');
+      toast.error('Name is required')
       return;
     }
 
     // Validate email
     if (email.trim() === '') {
       setEmailError('*Email is required');
+      toast.error('Email is required')
       return;
     } else if (!validateEmail(email)) {
       setEmailError('Invalid email address');
+      toast.error('nvalid email address')
       return;
     }
 
     emailjs.sendForm(
       serviceID, templateID, form.current, '7jl6uocNFTV__p0Tp'
     ).then((result)=>{
-    NotificationManager.success('Form submission successfull!')
+    toast.success('Form submission successfull!')
       e.target.reset();
       console.log(result)
       
@@ -77,13 +81,13 @@ const Contact = () => {
       e.target.reset();
      if (err){
      
-       NotificationManager.error('Something went wrong, please try again later')
+       toast.error('Something went wrong, please try again later')
      }
      
     })
 
     try{
-      await new Promise(()=>setTimeout(resolve, 2000))
+      // await new Promise(()=>setTimeout(resolve, 2000))
       setName('')
       setEmail('')
     } catch(error){
@@ -139,7 +143,7 @@ const Contact = () => {
           >
             <BsWhatsapp className='contact-option-icon' />
             <h4>Whatsapp</h4>
-            <a href='https://api.whatsapp.com/send?phone=+2349017129158' target='_blank' rel="noreferrer" className='btn btn-primary'>Send a message</a>
+            <a href='https://wa.me/08109879768?text=Hello%20Prince,%20I%20am%20---' target='_blank' rel="noreferrer" className='btn btn-primary'>Send a message</a>
           </article>
         </div>
         
