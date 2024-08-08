@@ -164,7 +164,7 @@ const Contact = () => {
           >
             <BsWhatsapp className='contact-option-icon' />
             <h4>Whatsapp</h4>
-            <a href='https://wa.me/08109879768?text=Hello%20Prince,%20I%20am%20---' target='_blank' rel="noreferrer" className='btn btn-primary'>Send a message</a>
+            <a href='https://wa.me/2348109879768?text=Hello%20Prince,%20I%20am%20---' target='_blank' rel="noreferrer" className='btn btn-primary'>Send a message</a>
           </article>
         </div>
         

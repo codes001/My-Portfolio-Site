@@ -1,0 +1,13 @@
+/* custom-toastify.css */
+@media (max-width: 768px) {
+    .Toastify__toast-container {
+      width: 80% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  
+    .Toastify__toast {
+      width: 100% !important;
+      margin-bottom: 10px !important;
+    }
+  }
