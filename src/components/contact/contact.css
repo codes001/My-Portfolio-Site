@@ -59,6 +59,10 @@ input, textarea {
     color: var(--color-white);
 }
 
+.submit-btn{
+    width: 200px !important;
+}
+
 button, input, textarea{
     font-family: inherit !important;
 

@@ -9,9 +9,13 @@ import AOS from 'aos'
 import { toast } from 'react-toastify'
 import 'aos/dist/aos.css'
 import './contact.css'
+import Loader from '../../utils/Loader'
+import ButtonSpinner from '../../utils/ButtonSpinner'
 
 
 const Contact = () => {
+const [loading, setLoading] = useState(false)
+
   //FORM VALIDATION
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -82,10 +86,12 @@ const Contact = () => {
       toast.error('Invalid email address')
       return;
     }
+    setLoading(true)
 
     emailjs.sendForm(
       serviceID, templateID, form.current, '7jl6uocNFTV__p0Tp'
     ).then((result)=>{
+
     toast.success('Form submission successfull!')
       e.target.reset();
       console.log(result)
@@ -109,6 +115,8 @@ const Contact = () => {
         setText(
           ''
         )
+        setLoading(false)
+
       }, 2000);
     } catch(error){
       toast.error('Err...Something went wrong')
@@ -190,7 +198,15 @@ const Contact = () => {
             name='user_message' rows='7' id='user_message' placeholder='Enter your message' ></textarea>
 
           <button type="submit"
-            className='btn btn-primary'>Submit</button>
+          disabled={loading}
+            className='btn btn-primary submit-btn'>
+              {
+                loading ? <>
+            <ButtonSpinner />
+
+                </> : "Submit"
+              }
+            </button>
         </form>
 
      
