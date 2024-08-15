@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@font-face {
+    font-family: "casual";
+    src: url(/Casual+font+eea1eca1-057f-4fd4-8c3b-440a08a20f78+www.mtzfile.pw+MIUI12+-FONT/fonts/Roboto-Regular.ttf);
+}
+
 :root {
     --color-bg: #01121b;
     --color-bg-variant: #05050a;
@@ -20,7 +25,7 @@ html {
 }
 
 body {
-    font-family: "Radio Canada Big", sans-serif;    background-color: var(--color-bg);
+    font-family: "casual", sans-serif;    background-color: var(--color-bg);
     background-image: url('./assets/bg-texture.png');
     color: var(--color-white);
     line-height: 1.7;

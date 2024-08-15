@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<theme>
+<version><![CDATA[1.0]]></version>
+<uiVersion>8</uiVersion>
+<author><![CDATA[Chariesa]]></author>
+<designer><![CDATA[Chariesa]]></designer>
+<title><![CDATA[default]]></title>
+<description><![CDATA[default]]></description>
+<authors>
+<author locale="en_US"><![CDATA[Chariesa]]></author>
+<author locale="zh_CN"><![CDATA[Chariesa]]></author>
+</authors>
+<designers>
+<designer locale="en_US"><![CDATA[Chariesa]]></designer>
+<designer locale="zh_CN"><![CDATA[Chariesa]]></designer>
+</designers>
+<titles>
+<title locale="en_US"><![CDATA[Casual font]]></title>
+<title locale="zh_CN"><![CDATA[default]]></title>
+</titles>
+<descriptions>
+<description locale="en_US"><![CDATA[READ THIS! 
+
+All fonts are support for MIUI 11&12. My fonts are mostly basic letters and symbols. If the font supports cyrillic, Korean hangul, latin or unicode I'll put it in tags. Thank you!]]></description>
+<description locale="zh_CN"><![CDATA[default]]></description>
+</descriptions>
+</theme>
