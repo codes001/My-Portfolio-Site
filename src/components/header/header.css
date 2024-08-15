@@ -15,7 +15,8 @@ overflow:hidden;
 
 header .header__container h1{
     
-    font-family: ' Grey Qo', sans-serif !important;
+    /* font-family: ' Grey Qo', cursive !important; */
+    text-transform: uppercase;
 }
 
 /*====================CTA======================= */

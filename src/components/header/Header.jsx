@@ -23,11 +23,11 @@ const Header = () => {
           sequence = {
             [
 
-              'Software Developer', 'Technical Writer', 'UI/UX Designer'
+              'Software Developer', 'Product Designer', 'Algorithmic Trader'
             ]
           }
           wrapper ='span'
-          speed={200}
+          speed={500}
           repeat= {Infinity}
          />
         <CTA />
