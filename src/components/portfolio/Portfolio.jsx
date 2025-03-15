@@ -8,6 +8,7 @@ import WHATSAPP from '../../assets/portfolio/whatsapp.jpg'
 import INSURE from '../../assets/portfolio/insure.png'
 import JERRY from '../../assets/portfolio/jerry.png'
 import AGRO from '../../assets/portfolio/agro.png'
+import PRINCEWILL from '../../assets/portfolio/princewill.jpg'
 // AOS
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -16,15 +17,15 @@ import './portfolio.css'
 const data = [
   {
     id : 1,
-    image: API,
-    title:'A full stack application built with HTML, CSS, Javascript & Python',
+    image: PRINCEWILL,
+    title:'Personal portfolio website built for an AI engineer',
     // github: 'https://github.com/codes001/API_2.git',
-    demo: 'https://api-2.netlify.app/'
+    demo: 'https://pcamaefule.vercel.app/'
   },
   {
     id : 2,
     image: NESREA,
-    title:'A clone of Nigerian based environmental agency',
+    title:'Rebuilding Nigerian based environmental agency website',
     // github: 'https://github.com/codes001/nesrea.git',
     demo: 'https://nesrea.netlify.app/'
   },

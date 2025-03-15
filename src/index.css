@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* @font-face {
     font-family: "casual";
     src: url(/Casual+font+eea1eca1-057f-4fd4-8c3b-440a08a20f78+www.mtzfile.pw+MIUI12+-FONT/fonts/Roboto-Regular.ttf);
-}
+} */
 
 :root {
     --color-bg: #01121b;
@@ -40,6 +42,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
 }
 
 title{

@@ -2,6 +2,7 @@ import {useEffect} from 'react'
 import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/dp.png'
+import ME2 from '../../assets/Prince.jpg'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import HeaderSocials from './HeaderSocials'
@@ -37,7 +38,7 @@ const Header = () => {
         <div className="me"
        
         >
-          <img src={ME} alt="me" 
+          <img src={ME2} alt="me" 
            data-aos="fade-up"
            data-aos-delay="50"
            data-aos-duration="3000"

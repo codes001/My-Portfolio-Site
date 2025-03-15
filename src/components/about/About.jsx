@@ -26,7 +26,7 @@ const About = () => {
           <img src={ME2} alt="ME" />
         </div>
         <div className="about__content">
-          <div className="about__cards">
+          {/* <div className="about__cards">
             <article className="about__card"
              data-aos="fade-up"
              data-aos-delay="200"
@@ -55,7 +55,7 @@ const About = () => {
               <small>15+</small>
             </article>
 
-          </div>
+          </div> */}
 
           <div
            data-aos="fade-up"
