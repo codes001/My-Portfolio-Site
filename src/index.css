@@ -7,9 +7,9 @@
 } */
 
 :root {
-    --color-bg: #01121b;
-    --color-bg-variant: #05050a;
-    --color-primary: #249fb5;
+    --color-bg: #15313b;
+    --color-bg-variant: #11282b;
+    --color-primary: #07444f;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.7);
     --transition: all 400ms ease;

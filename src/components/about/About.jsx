@@ -59,7 +59,7 @@ const About = () => {
 
           <div
            data-aos="fade-up"
-           data-aos-delay="50"
+           data-aos-delay="50"    
            data-aos-duration="3000"
           >
             <p>
